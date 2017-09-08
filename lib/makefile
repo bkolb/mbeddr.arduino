@@ -1,4 +1,4 @@
-CC=avr-gcc
+CC=C:/avr/bin/avr-gcc
 CFLAGS=-Os
 ODIR=./out
 BUILDDIR=./build
@@ -19,10 +19,10 @@ atmega32-obj:
 
 atmega328-lib: atmega328-obj
 	mkdir -p $(ODIR)/atmega328
-	avr-ar rcs $(ODIR)/atmega328/libmbeddr.a $(BUILDDIR)/atmega328/mbeddr_arduino.o
+	C:/avr/bin/avr-ar rcs $(ODIR)/atmega328/libmbeddr.a $(BUILDDIR)/atmega328/mbeddr_arduino.o
 atmega32-lib: atmega32-obj
 	mkdir -p $(ODIR)/atmega32
-	avr-ar rcs $(ODIR)/atmega32/libmbeddr.a $(BUILDDIR)/atmega32/mbeddr_arduino.o
+	C:/avr/bin/avr-ar rcs $(ODIR)/atmega32/libmbeddr.a $(BUILDDIR)/atmega32/mbeddr_arduino.o
 	
 clean: 
 	rm -rf $(ODIR) 

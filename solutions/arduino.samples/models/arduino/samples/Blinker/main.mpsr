@@ -12,6 +12,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
@@ -55,6 +56,9 @@
       <concept id="3705638916592120389" name="mbeddr.arduino.core.structure.MainLoop" flags="ng" index="EeM2N">
         <child id="3705638916592125422" name="body" index="EePso" />
       </concept>
+      <concept id="3705638916589737460" name="mbeddr.arduino.core.structure.SetUpVoid" flags="ng" index="Encs2">
+        <child id="3705638916589737716" name="body" index="Encg2" />
+      </concept>
       <concept id="2426951403070495999" name="mbeddr.arduino.core.structure.DelayExpression" flags="ng" index="1EylYe">
         <child id="2426951403070520654" name="expression" index="1EyjSZ" />
       </concept>
@@ -70,6 +74,19 @@
     <node concept="3GEVxB" id="3vlJV9egmzI" role="2OODSX">
       <property role="3GEa6x" value="false" />
       <ref role="3GEb4d" to="aelz:Yv2B6LBx6E" resolve="util_delay" />
+    </node>
+    <node concept="Encs2" id="7Eh0f$lA_O4" role="N3F5h">
+      <property role="TrG5h" value="setupvoid" />
+      <node concept="19Rifw" id="7Eh0f$lA_O5" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="7Eh0f$lA_O6" role="Encg2">
+        <node concept="3XISUE" id="7Eh0f$lA_O7" role="3XIRFZ" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7Eh0f$lA_M0" role="N3F5h">
+      <property role="TrG5h" value="empty_1504354710943_14" />
     </node>
     <node concept="EeM2N" id="7pMSfLXgv4X" role="N3F5h">
       <property role="TrG5h" value="mainloop" />

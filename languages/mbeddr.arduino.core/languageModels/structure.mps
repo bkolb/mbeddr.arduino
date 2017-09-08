@@ -17,6 +17,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="nbyu" ref="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -97,7 +98,7 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="55_53lUxdKT" role="1TKVEl">
-      <property role="TrG5h" value="libPath" />
+      <property role="TrG5h" value="libPath_old" />
       <property role="IQ2nx" value="5865116309641288761" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
@@ -111,6 +112,13 @@
     </node>
     <node concept="PrWs8" id="22vbFi$tK0V" role="PzmwI">
       <ref role="PrY4T" node="22vbFi$tHdB" resolve="ICpuSpeedAwareComponent" />
+    </node>
+    <node concept="1TJgyj" id="4CEOcszYEuC" role="1TKVEi">
+      <property role="IQ2ns" value="5344313461549213608" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="libPath" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     </node>
   </node>
   <node concept="PlHQZ" id="22vbFi$tHds">

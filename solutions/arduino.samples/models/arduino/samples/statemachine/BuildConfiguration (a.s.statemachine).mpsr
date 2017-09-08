@@ -48,6 +48,14 @@
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="4709703140582114943" name="com.mbeddr.ext.statemachines.structure.StatemachineConfigItem" flags="ng" index="3yF7LM">
         <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
@@ -77,9 +85,9 @@
     </language>
     <language id="3c4c8461-a533-4459-916a-dc0176793b4c" name="mbeddr.arduino.core">
       <concept id="2350648883898812438" name="mbeddr.arduino.core.structure.ArduinoPlatform" flags="ng" index="24Uyqy">
-        <property id="5865116309641288761" name="libPath" index="FSswc" />
         <property id="7781743472117499566" name="serialPort" index="Regzr" />
         <reference id="5466295800791814503" name="description" index="3SIZTQ" />
+        <child id="5344313461549213608" name="libPath" index="1DO7tJ" />
       </concept>
       <concept id="3750746866331613766" name="mbeddr.arduino.core.structure.DigitalPinConfiguration" flags="ng" index="A5USx">
         <property id="3750746866331613775" name="configuration" index="A5USC" />
@@ -110,9 +118,13 @@
       </node>
     </node>
     <node concept="24Uyqy" id="EvPvZE4n_d" role="2AWWZH">
-      <property role="FSswc" value="../../../../../../lib" />
       <property role="Regzr" value="C" />
       <ref role="3SIZTQ" to="1o4w:25es00MvBMx" resolve="uno" />
+      <node concept="9PVaO" id="7NwBWo2MoR0" role="1DO7tJ">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../lib" />
+      </node>
     </node>
     <node concept="A5USz" id="EvPvZE4n_e" role="2Q9xDr">
       <node concept="A5USx" id="EvPvZE4n_f" role="A5$Ns">
